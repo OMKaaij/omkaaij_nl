@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="nl" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+
+<head th:replace="fragments/head :: loggedin (pageTitle='Rekeningoverzicht', metaRobots='noindex, nofollow', metaDescription='', metaKeywords='')"></head>
+<body>
+<div class="container-fluid min-vh-100" id="page">
+    <div class="row header-default" id="header">
+        <header th:replace="fragments/header :: header-default"></header>
+    </div>
+    <div class="row mb-5" id="main-content">
+        <main th:replace="fragments/main :: main-home"></main>
+    </div>
+    <div class="row footer-default" id="footer">
+        <footer th:replace="fragments/footer :: footer-default"></footer>
+    </div>
+</div>
+</body>
+
+</html>

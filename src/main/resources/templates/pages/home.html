@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="nl" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head th:replace="fragments/head :: head-default (pageTitle='Home', metaRobots='noindex, nofollow', metaDescription='', metaKeywords='')"></head>
+<body>
+<div class="container-fluid min-vh-100" id="page">
+    <div id="header" class="row header-home">
+        <header th:replace="fragments/header :: header-home"></header>
+    </div>
+    <div id="main-content" class="row">
+        <main th:replace="fragments/main :: main-home"></main>
+    </div>
+    <div id="footer" class="row footer-default">
+        <footer th:replace="fragments/footer :: footer-default"></footer>
+    </div>
+</div> <!-- /container - #page -->
+<div th:replace="fragments/modal :: modal-new-account"></div>
+<div th:replace="fragments/scripts :: script-trigger-modal-new-account"></div>
+<div th:replace="fragments/scripts :: scripts-before-closing-tag"></div>
+</body>
+</html>

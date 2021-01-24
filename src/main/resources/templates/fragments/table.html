@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nl" xmlns:th="http://www.thymeleaf.org">
+
+<table class="table table-striped mb-5" th:fragment="table-confirmation-details"
+       th:object="${visitorRegistrationDto}">
+    <thead class="thead-dark">
+    <tr>
+        <th colspan="2" scope="col">Persoonlijke gegevens</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row" width="50%">Voorletters</th>
+        <td th:text="*{initials}"></td>
+    </tr>
+    <tr>
+        <th scope="row" width="50%">Voornaam</th>
+        <td th:text="*{firstName}"></td>
+    </tr>
+    <tr>
+        <th scope="row" width="50%">Tussenvoegsel</th>
+        <td th:text="*{preposition}"></td>
+    </tr>
+    <tr>
+        <th scope="row" width="50%">Achternaam</th>
+        <td th:text="*{surName}"></td>
+    </tr>
+    <tr>
+        <th scope="row" width="50%">Emailadres</th>
+        <td th:text="*{email}"></td>
+    </tr>
+    <tr>
+        <th scope="row" width="50%">Telefoon (mobiel)</th>
+        <td th:text="*{phone}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<table class="table table-striped mb-5" th:fragment="table-confirmation-address"
+       th:object="${visitorRegistrationDto}">
+    <thead class="thead-dark">
+    <tr>
+        <th colspan="2" scope="col">Adresgegevens</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row" width="50%">Postcode</th>
+        <td th:text="*{postalCode}"></td>
+    </tr>
+    <tr>
+        <th scope="row" width="50%">Huisnummer + toevoeging</th>
+        <td th:text="*{homeNumber}"></td>
+    </tr>
+    <tr>
+        <th scope="row" width="50%">Straat</th>
+        <td th:text="*{street}"></td>
+    </tr>
+    <tr>
+        <th scope="row" width="50%">Woonplaats</th>
+        <td th:text="*{residence}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<table class="table table-striped mb-5" th:fragment="table-confirmation-account"
+       th:object="${visitorRegistrationDto}">
+    <thead class="thead-dark">
+    <tr>
+        <th colspan="2" scope="col">Accountgegevens</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row" width="50%">Gebruikersnaam</th>
+        <td th:text="*{userName}"></td>
+    </tr>
+    </tbody>
+</table>
+
+</html>
